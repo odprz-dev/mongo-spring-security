@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://${DB_USER}:${DB_PASS}@${MONGO_DB_CLUSTER}/${DATABASE}?retryWrites=true&w=majority&connectTimeoutMS=30000&ssl=true
+neptunecode:
+  app:
+    jwtsecret: ${JWT_SECRET}
+    jwtexpirationms: 180000
